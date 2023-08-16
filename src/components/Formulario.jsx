@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import useClima from '../hooks/useClima';
 
 const Formulario = () => {
