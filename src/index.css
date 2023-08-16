@@ -87,6 +87,35 @@ form {
   width: 100%;
 }
 
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #0EA5E9;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
 .clima h2{
   text-align: center;
 }
@@ -110,4 +139,30 @@ form {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.developer{
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  color: #fcf;
+  margin-bottom: 1rem;
+}
+
+.return-button{
+  color: white;
+  background-color: #db2777;
+  display: inline-block;
+  margin: 0 5rem 1rem;
+  padding: .5rem;
+  border-radius: 10em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 300ms ease;
+}
+
+.return-button:hover{
+  background-color: #1048a4;
 }
