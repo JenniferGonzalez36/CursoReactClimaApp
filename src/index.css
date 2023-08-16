@@ -80,10 +80,34 @@ form {
   background-color: #0369a1;
 }
 
-
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.clima h2{
+  text-align: center;
+}
+
+.clima > p:first-of-type{
+  font-size: 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.clima p{
+  text-align: center;
+  margin: 0;
+}
+
+.clima p span{
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+.temp_min_max{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
